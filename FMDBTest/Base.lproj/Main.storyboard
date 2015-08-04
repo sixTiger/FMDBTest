@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Fe-hJ-UgL">
+                                <rect key="frame" x="36" y="40" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LXh-Iw-wFn"/>
+                                    <constraint firstAttribute="width" constant="60" id="PYj-Vr-9gH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQ3-DD-XnT">
+                                <rect key="frame" x="106" y="40" width="348" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SM4-gu-s10">
+                                <rect key="frame" x="464" y="40" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0Sd-Ni-JI9"/>
+                                    <constraint firstAttribute="height" constant="100" id="4fE-c2-hnC"/>
+                                </constraints>
+                                <state key="normal" image="icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="iconButtonClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aFv-ZA-7QQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4K-jk-Q1h">
+                                <rect key="frame" x="36" y="160" width="528" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vdg-t6-1pB"/>
+                                </constraints>
+                                <state key="normal" title="添加">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="insert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ibD-TC-7dq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DY-3k-Tai">
+                                <rect key="frame" x="36" y="210" width="528" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ctD-AP-bT6"/>
+                                </constraints>
+                                <state key="normal" title="查询">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="select:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CGc-Ll-TJE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUH-uV-0pE">
+                                <rect key="frame" x="36" y="260" width="528" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mGu-ho-RxX"/>
+                                </constraints>
+                                <state key="normal" title="更新">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="update:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VLf-z2-p5I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aV3-pC-B72">
+                                <rect key="frame" x="36" y="310" width="528" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="44e-dF-WLz"/>
+                                </constraints>
+                                <state key="normal" title="删除">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="delete:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c4v-lF-Xxf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7DY-3k-Tai" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="09O-rf-5y1"/>
+                            <constraint firstItem="bQ3-DD-XnT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="0Es-LT-gBn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G4K-jk-Q1h" secondAttribute="trailing" constant="20" id="987-jE-Da0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SM4-gu-s10" secondAttribute="trailing" constant="20" id="AcL-Zc-jCQ"/>
+                            <constraint firstItem="bQ3-DD-XnT" firstAttribute="leading" secondItem="7Fe-hJ-UgL" secondAttribute="trailing" constant="10" id="BnB-BQ-4xB"/>
+                            <constraint firstItem="aV3-pC-B72" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="IM2-iy-9JK"/>
+                            <constraint firstItem="SM4-gu-s10" firstAttribute="leading" secondItem="bQ3-DD-XnT" secondAttribute="trailing" constant="10" id="IP2-K7-cTl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iUH-uV-0pE" secondAttribute="trailing" constant="20" id="QQX-r0-TOl"/>
+                            <constraint firstItem="iUH-uV-0pE" firstAttribute="top" secondItem="7DY-3k-Tai" secondAttribute="bottom" constant="20" id="TlL-B8-dGM"/>
+                            <constraint firstItem="7Fe-hJ-UgL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="Ya0-Ky-rLJ"/>
+                            <constraint firstItem="G4K-jk-Q1h" firstAttribute="top" secondItem="SM4-gu-s10" secondAttribute="bottom" constant="20" id="alp-D9-l8Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aV3-pC-B72" secondAttribute="trailing" constant="20" id="bPI-uX-jcJ"/>
+                            <constraint firstItem="aV3-pC-B72" firstAttribute="top" secondItem="iUH-uV-0pE" secondAttribute="bottom" constant="20" id="bcp-xl-jX4"/>
+                            <constraint firstItem="7Fe-hJ-UgL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="bmU-vg-fk6"/>
+                            <constraint firstItem="iUH-uV-0pE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="cPY-Sg-qtP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7DY-3k-Tai" secondAttribute="trailing" constant="20" id="fgN-ri-3Cu"/>
+                            <constraint firstItem="G4K-jk-Q1h" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="hwi-2N-ezM"/>
+                            <constraint firstItem="SM4-gu-s10" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="mPm-0i-wU6"/>
+                            <constraint firstItem="7DY-3k-Tai" firstAttribute="top" secondItem="G4K-jk-Q1h" secondAttribute="bottom" constant="20" id="yz3-Nv-0PO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="IDTextField" destination="7Fe-hJ-UgL" id="RbB-i9-CrG"/>
+                        <outlet property="iconButton" destination="SM4-gu-s10" id="NJ3-ci-pQD"/>
+                        <outlet property="nameTextField" destination="bQ3-DD-XnT" id="wCy-lJ-9xS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="300" height="300"/>
+    </resources>
+</document>
